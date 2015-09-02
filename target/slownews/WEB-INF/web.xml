@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+  <servlet>
+    <servlet-name>LogIn</servlet-name>
+    <servlet-class>net.lermex.slownews.servlet.MyLogInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogIn</servlet-name>
+    <url-pattern>/logining</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Index</servlet-name>
+    <servlet-class>net.lermex.slownews.servlet.MyIndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Index</servlet-name>
+    <url-pattern>/mainpage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Archive</servlet-name>
+    <servlet-class>net.lermex.slownews.servlet.MyArchiveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Archive</servlet-name>
+    <url-pattern>/archive</url-pattern>
+  </servlet-mapping>
+</web-app>
