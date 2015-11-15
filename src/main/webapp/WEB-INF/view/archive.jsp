@@ -70,7 +70,7 @@
             				
             				<input type = "checkbox" name = "selectedToDel" value = "${archivedNews.title}" class = "text-right">
             					<a href = <c:out value = "${archivedNews.link}"/>> <div class = "h3"><c:out value = "${archivedNews.title}"/></div></a>		
-            					<c:out value = "${archivedNews.description}"/>
+            					<c:out value = "${archivedNews.description}" escapeXml = "false"/>
             				</div>
             			</c:forEach>
             			<div class = "col-md-12, text-center">	
@@ -87,7 +87,7 @@
             				<div class = "col-md-11, news_block">	
             				
             					<a href = <c:out value = "${archivedNews.link}"/>> <div class = "h3"><c:out value = "${archivedNews.title}"/></div></a>		
-            					<c:out value = "${archivedNews.description}"/>
+            					<c:out value = "${archivedNews.description}" escapeXml = "false"/>
             				</div>
             			</c:forEach>
             			<div class = "col-md-12, text-center">	

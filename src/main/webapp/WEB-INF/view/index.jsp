@@ -64,7 +64,7 @@
             				<div class = "col-md-11, news_block">	
             				<input type = "checkbox" name = "selected" value = "${news.title}" class = "text-right">
             					<a href = <c:out value = "${news.link}"/>> <h1 class = "h3"><c:out value = "${news.title}"/></h1></a>		
-            					<c:out value = "${news.description}"/>
+            					<c:out value = "${news.description}" escapeXml = "false"/>
             				</div>
             			</c:forEach>
             			<div class = "col-md-12, text-center">	
